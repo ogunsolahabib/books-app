@@ -8,7 +8,7 @@ import PageNotFound from "../Pages/PageNotFound";
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/" exact component={BooksSectionPage} />
           <Route
