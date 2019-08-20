@@ -42,7 +42,7 @@ const BookContainer = props => {
         </div>
       </div>
       <BookDescription description={bookInfo.description} />
-      {hasRating}
+      {hasRating()}
     </div>
   );
 };
